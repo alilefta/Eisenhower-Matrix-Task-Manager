@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Eisenhower Matrix</title>
+	</head>
+	<body>
+		<main class="container">
+			<h1 class="heading-1">Eisenhower Matrix - Task Manager</h1>
+			<p class="sub-heading">Empower your task management capability</p>
+			<section>
+				<div class="inputs">
+					<div class="inputs-container">
+						<div class="inputs-form-control">
+							<div class="task-input-container">
+								<input class="task-input" type="text" title="task input" placeholder="E.g., Studying Deutsch" />
+								<p class="text-input-placeholder">Add a New Task</p>
+							</div>
+
+							<span class="date-time-input-toggle">
+								<input class="due-to-input" type="datetime-local" placeholder="Due to" data-value="" />
+								<span class="date-time-input-toggle-button">
+									<i class="fa-solid fa-calendar-days"></i>
+									<p>Due To</p>
+								</span>
+							</span>
+						</div>
+						<div class="inputs-control-buttons">
+							<button class="toggle-button red-toggle-button" type="button">
+								<p>Urgent</p>
+							</button>
+							<button class="toggle-button blue-toggle-button" type="button"><p>Important</p></button>
+							<div class="tag-control">
+								<input type="text" title="Tag Input" class="tag-input" placeholder="E.g., Study" />
+
+								<span class="tag-icon"
+									><svg width="20" height="20" viewBox="0 0 20 20" fill="none" class="tag-icon-svg" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11.25 3.06424L10.5003 3.72597C10.514 3.74154 10.5282 3.75667 10.5429 3.77135L11.25 3.06424ZM16.9358 11.25L16.274 10.5003C16.2585 10.514 16.2433 10.5282 16.2287 10.5429L16.9358 11.25ZM17.0833 8.89757L17.8331 8.23584C17.8193 8.22028 17.8051 8.20514 17.7904 8.19047L17.0833 8.89757ZM8.89757 17.0833L8.19047 17.7904C8.20514 17.8051 8.22028 17.8193 8.23584 17.8331L8.89757 17.0833ZM11.1024 17.0833L11.7642 17.8331C11.7797 17.8193 11.7949 17.8051 11.8095 17.7904L11.1024 17.0833ZM3.06424 11.25L3.77135 10.5429L3.74932 10.5209L3.72597 10.5003L3.06424 11.25ZM5.83333 4.83333C5.28105 4.83333 4.83333 5.28105 4.83333 5.83333C4.83333 6.38562 5.28105 6.83333 5.83333 6.83333V4.83333ZM5.84167 6.83333C6.39395 6.83333 6.84167 6.38562 6.84167 5.83333C6.84167 5.28105 6.39395 4.83333 5.84167 4.83333V6.83333ZM3.5 5.83333C3.5 4.54467 4.54467 3.5 5.83333 3.5V1.5C3.4401 1.5 1.5 3.4401 1.5 5.83333H3.5ZM3.5 10V5.83333H1.5V10H3.5ZM5.83333 3.5H10V1.5H5.83333V3.5ZM10 3.5C10.199 3.5 10.3766 3.58591 10.5003 3.72597L11.9997 2.40251C11.5126 1.85055 10.7966 1.5 10 1.5V3.5ZM16.5 10C16.5 10.199 16.4141 10.3766 16.274 10.5003L17.5975 11.9997C18.1494 11.5126 18.5 10.7966 18.5 10H16.5ZM16.3336 9.55931C16.4379 9.67743 16.5 9.83024 16.5 10H18.5C18.5 9.32439 18.2474 8.70532 17.8331 8.23584L16.3336 9.55931ZM10 16.5C9.83024 16.5 9.67743 16.4379 9.55931 16.3336L8.23584 17.8331C8.70532 18.2474 9.32439 18.5 10 18.5V16.5ZM10.4407 16.3336C10.3226 16.4379 10.1698 16.5 10 16.5V18.5C10.6756 18.5 11.2947 18.2474 11.7642 17.8331L10.4407 16.3336ZM3.72597 10.5003C3.58591 10.3766 3.5 10.199 3.5 10H1.5C1.5 10.7966 1.85055 11.5126 2.40251 11.9997L3.72597 10.5003ZM10.5429 3.77135L16.3762 9.60468L17.7904 8.19047L11.9571 2.35713L10.5429 3.77135ZM9.60468 16.3762L3.77135 10.5429L2.35713 11.9571L8.19047 17.7904L9.60468 16.3762ZM16.2287 10.5429L10.3953 16.3762L11.8095 17.7904L17.6429 11.9571L16.2287 10.5429ZM5.83333 6.83333H5.84167V4.83333H5.83333V6.83333Z"
+											fill="#000000"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</div>
+					<button type="button" title="Add task" class="add-task-button">+ Add Task</button>
+				</div>
+				<div class="quadrants-container">
+					<div class="quadrant important-urgent-quadrant">
+						<div class="quadrant-header">
+							<div class="quadrant-header-content">
+								<h3 class="heading-3">Urgent & Important ⚡</h3>
+								<h6>Do These First</h6>
+							</div>
+							<div class="tasks-number">
+								<span>1 tasks</span>
+								<button class="expand-button" type="button" title="Expand quadrant"><img alt="expand quadrant symbol" src="./src/assets/arrows-expand.svg" /></button>
+							</div>
+						</div>
+						<div class="tasks">
+							<div class="tasks-dragging-placeholder">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 4V20M20 12L4 12" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="quadrant important-not-urgent-quadrant">
+						<div class="quadrant-header">
+							<div class="quadrant-header-content">
+								<h3 class="heading-3">Important but not urgent ⏰</h3>
+								<h6>Schedule these</h6>
+							</div>
+
+							<div class="tasks-number">
+								<span>1 tasks</span>
+								<button class="expand-button" type="button" title="Expand quadrant"><img alt="expand quadrant symbol" src="./src/assets/arrows-expand.svg" /></button>
+							</div>
+						</div>
+						<div class="tasks">
+							<div class="tasks-dragging-placeholder">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 4V20M20 12L4 12" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="quadrant urgent-not-important-quadrant">
+						<div class="quadrant-header">
+							<div class="quadrant-header-content">
+								<h3 class="heading-3">Urgent but not Important 🤝</h3>
+								<h6>Delegate if possible</h6>
+							</div>
+
+							<div class="tasks-number">
+								<span>1 tasks</span>
+								<button class="expand-button" type="button" title="Expand quadrant"><img alt="expand quadrant symbol" src="./src/assets/arrows-expand.svg" /></button>
+							</div>
+						</div>
+						<div class="tasks">
+							<div class="tasks-dragging-placeholder">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 4V20M20 12L4 12" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="quadrant not-urgent-not-important-quadrant">
+						<div class="quadrant-header">
+							<div class="quadrant-header-content">
+								<h3 class="heading-3">Not Urgent & not Important 💤</h3>
+								<h6>Eliminate or postpone</h6>
+							</div>
+
+							<div class="tasks-number">
+								<span>1 tasks</span>
+								<button class="expand-button" type="button" title="Expand quadrant"><img alt="expand quadrant symbol" src="./src/assets/arrows-expand.svg" /></button>
+							</div>
+						</div>
+						<div class="tasks">
+							<div class="tasks-dragging-placeholder">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 4V20M20 12L4 12" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loading-indicator">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+						<circle fill="none" stroke-opacity="1" stroke="#FF156D" stroke-width=".5" cx="100" cy="100" r="0">
+							<animate attributeName="r" calcMode="spline" dur="2" values="1;80" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate>
+							<animate attributeName="stroke-width" calcMode="spline" dur="2" values="0;25" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate>
+							<animate attributeName="stroke-opacity" calcMode="spline" dur="2" values="1;0" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate>
+						</circle>
+					</svg>
+				</div>
+			</section>
+			<div class="notification">
+				<h4>Message Heading</h4>
+				<div class="notification-body">
+					<p>Message Body</p>
+					<button type="button">Okay</button>
+				</div>
+			</div>
+		</main>
+		<script src="src/app.js"></script>
+		<script src="https://kit.fontawesome.com/19b8aa4840.js" crossorigin="anonymous"></script>
+	</body>
+</html>
