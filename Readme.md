@@ -1,5 +1,3 @@
-I'll help format this into a clean README.md file using proper Markdown syntax:
-
 # Eisenhower Matrix - Task Manager
 
 Empower your task management capabilities with a modern and easy-to-use web application inspired by the Eisenhower Matrix. Organize your tasks by urgency and importance to focus on what matters most.
@@ -27,14 +25,6 @@ Empower your task management capabilities with a modern and easy-to-use web appl
 
 -   **Progress Tracking:** Stay updated with the task count in each quadrant
 
-## Showcase
-
-![](./src/assets/screenshots/ScreenRecording.mp4)
-
-<video width="820" height="540" controls>
-  <source src="./src/assets/screenshots/ScreenRecording.mp4" type="video/mp4">
-</video>
-
 ## Getting Started
 
 ### Installation
@@ -42,8 +32,8 @@ Empower your task management capabilities with a modern and easy-to-use web appl
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/eisenhower-matrix.git
-cd eisenhower-matrix
+git clone https://github.com/yourusername/eisenhower-matrix-task-manager.git
+cd eisenhower-matrix-task-manager
 ```
 
 2. Open the app:
@@ -102,9 +92,3 @@ git commit -m "Add feature description"
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contact
-
--   **Author:** Your Name
--   **Email:** your.email@example.com
--   **GitHub Repository:** [Eisenhower Matrix](https://github.com/yourusername/eisenhower-matrix)
