@@ -27,9 +27,13 @@ Empower your task management capabilities with a modern and easy-to-use web appl
 
 -   **Progress Tracking:** Stay updated with the task count in each quadrant
 
-## Screenshots
+## Showcase
 
-[Your screenshots will go here]
+![](./src/assets/screenshots/ScreenRecording.mp4)
+
+<video width="820" height="540" controls>
+  <source src="./src/assets/screenshots/ScreenRecording.mp4" type="video/mp4">
+</video>
 
 ## Getting Started
 
