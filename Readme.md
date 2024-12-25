@@ -2,6 +2,9 @@
 
 Empower your task management capabilities with a modern and easy-to-use web application inspired by the Eisenhower Matrix. Organize your tasks by urgency and importance to focus on what matters most.
 
+### Live Preview here: 
+https://alilefta.github.io/Eisenhower-Matrix-Task-Manager/
+
 ## Features
 
 -   **Dynamic Quadrants:** Organize tasks into four categories:
