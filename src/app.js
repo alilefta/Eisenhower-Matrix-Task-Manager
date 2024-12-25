@@ -1,9 +1,3 @@
-//  =====TODO ====
-//  Add loading spinner for tasks
-//  Load Tasks in async fashion
-// add delete functionality
-// Drag and Drop
-
 const state = {
 	_isLoading: false,
 	get IsLoading() {
@@ -701,12 +695,6 @@ class Task {
 		return this.tip;
 	}
 }
-
-let task1 = new Task("Reading System Design", "12/22/2024, 03:33 AM", false, false, "Study");
-let task2 = new Task("Practice UX/UI", "12/22/2024, 05:20 PM", false, true, "Building");
-
-TaskManager.addTask(task1);
-TaskManager.addTask(task2);
 
 class MessageBox {
 	static notification = document.querySelector(".notification");
