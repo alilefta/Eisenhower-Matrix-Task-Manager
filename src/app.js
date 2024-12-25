@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	TaskManager.UpdateTaskNumbers();
 
 	TaskManager.LoadTasks();
-	TaskManager.initializeTaskControls();
+	TaskManager.InitializeTaskControls();
 	UIManager.DraggingAndDropping();
 	//state.IsLoading = false;
 });
@@ -237,7 +237,7 @@ class TaskManager {
 		return taskItem;
 	}
 
-	static initializeTaskControls() {
+	static InitializeTaskControls() {
 		const quadrantsContainer = document.querySelector(".quadrants-container");
 		quadrantsContainer.addEventListener("click", (e) => {
 			const targetedElement = e.target;
@@ -627,6 +627,10 @@ class UIManager {
 			});
 			container.addEventListener("drop", dropHandler);
 		}
+	}
+
+	static UpdateLocalStorage() {
+		localStorage.setItem("Tasks", TaskManager.UserTasks);
 	}
 
 	static render() {}
